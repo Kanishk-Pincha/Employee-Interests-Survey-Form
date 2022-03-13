@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee Interests Survey Form</title>
+		<style type="text/css">
+		#main-header{
+			text-align:center;
+			background-color:black;
+			color:white;
+			padding:10px;
+		}
+
+		#main-footer{
+			text-align: center;
+			font-size:18px;
+		}
+		</style>
+	</head>
+	<body>
+		<div>
+		<header id="main-header">
+		<h1>Employee Interests Survey Form</h1>
+		</header>
+		</div>
+		<br>
+		<form action="process.php" method="POST">
+			<div>
+				<label>Enter Your Name</label>
+				<input type="text" name="employeeName">
+			</div>
+			<br>
+			<div>
+				<label>Enter Your Department</label>
+				<input type="text" name="employeeDepartment">
+			</div>
+			<br>
+			<div>
+				<label>Tell us a little about yourself:</label><br>
+				<textarea name="message"></textarea>
+			</div>
+			<br>
+			<div>
+			    <label for="yes_no_radio">Do Exercise at Home?</label>
+				<br>
+				<input type="radio" name="yes_no">Yes</input>
+				<br>
+				<input type="radio" name="yes_no">No</input><br>
+    		</div>
+			<br>
+			<div>
+				<label>How do you like to read about your favourite topics?</label><br>
+				<input type="checkbox" id="method1" name="method1" value="Books">
+            	<label for="method1"> Books</label><br>
+            	<input type="checkbox" id="method2" name="method2" value="Online Resources">
+            	<label for="method2"> Online Resources</label><br>
+				<input type="checkbox" id="method3" name="method3" value="Phone Apps">
+				<label for="method3"> Phone Apps</label><br>
+				<input type="checkbox" id="method4" name="method4" value="Magazines">
+				<label for="method4"> Magazines</label><br>
+			</div>	
+				<br>
+				<div>
+				<label>What genre of movies do you like?</label>
+				<select name="genre">
+					<option value="action">Action</option>
+					<option value="adventure">Adventure</option>
+					<option value="children/family">Children/Family</option>
+					<option value="comedy">Comedy</option>
+					<option value="crime">Crime</option>
+					<option value="drama">Drama</option>
+					<option value="epic">Epic</option>
+					<option value="fantasy">Fantasy</option>
+					<option value="Historical">Historical</option>
+					<option value="horror">Horror</option>
+					<option value="musical">Musical</option>
+					<option value="mystery">Mystery</option>
+					<option value="romance">Romance</option>
+					<option value="sci-fi">Sci-Fi</option>
+					<option value="spy">Spy</option>
+					<option value="thriller">Thriller</option>
+					<option value="war">War</option>
+					<option value="western">Western</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+				<input type="submit" name="submit" value="Submit Form">
+		</form>
+
+		<div style="margin-top:500px"></div>
+	</body>
+</html>
